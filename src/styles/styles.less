@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500.css');
+
+body {
+  margin:auto auto;
+  padding:0;
+}
+.plus {
+  overflow: hidden;
+  position: relative;
+  margin: auto auto;
+  display: table-cell;
+  font-size: 0;
+  height: 100vh;
+  margin: auto auto;
+  vertical-align: middle;
+  width: 100vw;
+  h3 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: 500;
+    margin: auto auto 10px auto;
+    text-align: center;
+  }
+  h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin: 0 auto 5px auto;
+  }
+  p {
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0 auto 0 auto;
+  }
+  a {
+    color: #000;
+  }
+
+  // Slider.
+  .slider_container {
+    box-sizing: border-box;
+    margin: 20px auto auto auto;
+    max-width: 975px;
+    text-align: center;
+    width: 100%;
+  }
+
+  // Map.
+  .map_container {
+    margin: auto auto;
+    svg {
+      display: block;
+      margin: auto auto;
+      .path {
+        stroke-width: 0.5px;
+        stroke: #999;
+        transition: fill 0.2s linear;
+      }
+      .kosovo {
+        stroke-dasharray: 3,3;
+        stroke-width: 0.5px;
+        z-index: 99;
+        stroke: #999;
+        transition: fill 0.2s linear;
+      }
+      .number,
+      .circle {
+        transition: all 0.5s linear;
+      }
+      .text {
+        font-family: 'Roboto';
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: none;
+      }
+      .number {
+        color: rgba(0, 0, 0, 0.8);
+        fill: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto';
+        font-weight: 500;
+        line-height: 42px;
+        font-size: 0;
+        stroke: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        text-shadow: 0 0 0 #000;
+      }
+    }
+  }
+
+  // Line chart
+  .line_chart_container {
+    margin: auto auto;
+  }
+  @import 'basics.less';
+}
