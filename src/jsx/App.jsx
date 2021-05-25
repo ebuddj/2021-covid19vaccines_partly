@@ -30,7 +30,7 @@ const type = 'vaccinated';
 
 const projection = (area === 'erno') ? d3.geoAzimuthalEquidistant().center([25,46]).scale(3000) : d3.geoAzimuthalEquidistant().center([33,57]).scale(800);
 const data_file_name = (area === 'erno') ? 'data_erno.json' : 'data.json';
-const multiplier = (area === 'erno') ? 8 : 3;
+const multiplier = (area === 'erno') ? 8 : 2;
 
 class App extends Component {
   constructor(props) {
